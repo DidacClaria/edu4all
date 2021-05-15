@@ -110,6 +110,8 @@ GEM
     nio4r (2.5.7)
     nokogiri (1.11.4-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.4-x86_64-linux)
+      racc (~> 1.4)
     opentok (4.2.0)
       activesupport (>= 2.0)
       addressable (~> 2.3)
@@ -212,6 +214,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.4.4)
