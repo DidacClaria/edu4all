@@ -13,11 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import "font-awesome-sprockets";
-@import "font-awesome";
-@import "bootstrap";
-@import "jumpstart/sticky-footer";
-@import "jumpstart/announcments";
+
 
 @include media-breakpoint-down(xs) {
   .container {
