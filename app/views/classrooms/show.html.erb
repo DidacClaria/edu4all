@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @classroom.name %>
+</p>
+
+<div
+     data-controller="vonage"
+     data-vonage-api-key="<%= Rails.application.credentials.vonage_api_key %>"
+     data-vonage-session-id="<%= @classroom.vonage_session_id %>"
+     data-vonage-token="<%= @token %>">
+     <center id="publish"></center>
+     <div id="creator"></div>
+</div>
+
+
+<%= link_to 'Edit', edit_classroom_path(@classroom) %> |
+<%= link_to 'Back', classrooms_path %>
