@@ -16,6 +16,15 @@
     <%= form.text_field :name %>
   </div>
 
+
+
+  <p>
+  <label for "query_product_name"> Category: </label>
+  <%= form.select :name,
+                  @categories,
+                  :name => "Select Category"
+  %>
+</p>
   <div class="actions">
     <%= form.submit %>
   </div>

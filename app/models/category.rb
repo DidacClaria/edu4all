@@ -1,3 +1,3 @@
 class Category < ApplicationRecord
-    belongs_to :classroom
+    has_many :classroom
 end
