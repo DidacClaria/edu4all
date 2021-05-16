@@ -15,6 +15,12 @@ class ClassroomsController < ApplicationController
   # GET /classrooms/new
   def new
     @classroom = Classroom.new
+    array = []
+    Category.all.each do |cat|
+      array.push(cat.name)
+    end
+    @categories = array
+
   end
 
   # GET /classrooms/1/edit
